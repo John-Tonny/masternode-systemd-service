@@ -13,8 +13,8 @@ User=root
 Group=root
 Type=forking
 PIDFile=/root/.adultchain/adultchaind.pid
-ExecStart=/usr/local/bin/adultchaind -daemon -conf=/root/.adultchain/adultchain.comf -datadir=/root/.adultchain
-ExecStop=/usr/local/bin/adultchain-cli -conf=/root/.adultchain/adultchain.comf -datadir=/root/.adultchain stop
+ExecStart=/usr/local/bin/adultchaind -daemon -conf=/root/.adultchain/adultchain.conf -datadir=/root/.adultchain
+ExecStop=/usr/local/bin/adultchain-cli -conf=/root/.adultchain/adultchain.conf -datadir=/root/.adultchain stop
 Restart=always
 PrivateTmp=true
 TimeoutStopSec=60s
